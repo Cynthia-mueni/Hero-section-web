@@ -1,7 +1,6 @@
 .topnav{
     display: flex;
-    gap: 20%;
-    flex-direction: row;
+    gap: 10%;
     text-align: center;
     padding:50px; 
 }
@@ -47,9 +46,8 @@
 
 @media screen and (min-width:375px),(max-width:735px){
     .topnav{
-        display: flex;
+        display: block;
         flex-wrap: wrap;
-        text-align: center;
 
     }
     .container1{
@@ -65,4 +63,56 @@
         background-color: antiquewhite;
         padding: 2px;
     }
+    #nav{
+        gap:30px;
+        padding: 10px;
+
+    }
+}
+@media screen and (min-width:393px),(max-width:851px){
+    .topnav{
+        display:flex;
+        flex-wrap: wrap;
+}
+
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    background-color: rgb(219, 243, 235);
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    background-color: antiquewhite;
+    padding: 2px;
+}
+#nav{
+    gap:30px;
+    padding: 10px;
+
+}
+}
+@media screen and (min-width:412px),(max-width:915px){
+    .topnav{
+        display:flex;
+        flex-wrap: wrap;
+}
+
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(219, 243, 235);
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+}
+#nav{
+    gap:30px;
+    padding: 10px;
+
+}  
 }
