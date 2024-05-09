@@ -1,168 +1,357 @@
-.topnav{
+.topnavbar{
     display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    gap: 10px;
+}
+#navbar{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    justify-content: space-between;
     gap: 10%;
+    
+}
+#navbar a {
+  text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    
+  }
+  button{
+    width: 25%;
+    height: 20%;
+  }
+
+
+ #login{
+    border-radius: 15px;
+    height: 33%;
+    border-color: rgb(226, 36, 99);
+    color: palevioletred;
+ }
+
+ #button{
+    border-radius: 15px;
+    width: 90px;
+    height: 33%;
+    border-color: rgb(226, 36, 99);
+    color: white;
+    background-color: palevioletred;
+ }
+
+  ul{
+    display: flex;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: flex;
     text-align: center;
-    padding:50px; 
-    justify-content: space-around;
-
-}
-#cape{
-    width: 20%;
-}
-#nav{
+    padding: 14px 16px;
+    
+  }
+  .input-wrapper{
     display: flex;
     flex-direction: row;
+    /* font-size: 30px; */
+  }
+.explore{
+    background-color: rgb(195, 89, 125);
+    border-radius: 20px;
+    position: absolute;
+    border: 3px solid palevioletred;
+    color:rgb(214, 197, 197);
+    width: 6%;
+    height: 5%;
+    margin-left: 15%;
 
 
-}
-.buttons{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-.input{
-    display: flex;
-    flex-direction: row;
+    
+    
 }
 .placeholder input{
-border-radius: 20px;
-position: relative;
-width:100% ;
-height: 70%;
+    width: 165%;
+    height: 150%;
+    position: relative;
+    border-radius: 20px;
 }
-.color{
-    color: red;
-}
-#heading{
-    color: rgb(17, 17, 81);
-}
-.words{
+
+.Landingpage{
     display: flex;
-    gap: 20px;
+    margin-left: 10%;
+    font-size: 30px;
+    color: rgb(23, 23, 60);
+    ;
 }
-#skill{
-    color:rgb(17, 17, 81);
+.footer{
+    display: flex;
+    padding: 5%;
+    gap: 25%;
+    margin-top: 15%;
+
+}
+span{
+    color: rgb(233, 57, 57);
 }
 #pic{
-    width: 50%;
-    
+    width: 760px;
 }
-
+.LandingSubscription{
+    display: flex;
+    padding: 20px;
+    justify-content:space-between;
+    font-size: 30px;
+    gap: 10%;
+}
+@media  only screen and (min-width: 280px) and (max-width: 670px) {
+  .topnavbar{
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    /* gap: 10px; */
+}
+#navbar{
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 20px;
+  justify-content: space-between;
+  /* gap: 10%; */
+  font-size: 12px;
+}
+.Landingpage{
+  flex-wrap: wrap;
+  margin-left: 10%;
+  font-size: 15px;
+  color: rgb(23, 23, 60);
+  ;
+}
+#pic{
+  width: 90px;
+}
+.footer{
+  flex-wrap: wrap;
+  
+  padding: 5%; 
+  gap: 25%;
+   margin-top: 15%;
+}
+.placeholder input{
+  width: 68%;
+  height: 105%;
+  position: relative;
+  border-radius: 20px;
+}
+.explore{
+  background-color: rgb(195, 89, 125);
+  border-radius: 20px;
+  position: absolute;
+  border: 3px solid palevioletred;
+  color:rgb(214, 197, 197);
+  width: 15%;
+  height: 3%;
+  margin-left: 25%;
+}
+.LandingSubscription{
+  display: flex;
+  padding: 20px;
+  justify-content:space-between;
+  font-size: 15px;
+  gap: 10%;
+}
 #login{
-    border-color:red;
-    color: red;
-    padding: 10px;
-    border-radius: 50%;
-
+  border-radius: 15px;
+  height: 30%;
+  width: 50px;
+  border-color: rgb(226, 36, 99);
+  color: palevioletred;
 }
 #button{
-    background-color:red;
-    border-radius: 40%;
-    width: 80px;
-    height: 70%;
+  border-radius: 15px;
+  width: 50px;
+  height: 35%;
+  border-color: rgb(226, 36, 99);
+  color: white;
+  background-color: palevioletred;
+  margin-right: 10px;
 }
-#small{
-    background-color:rgb(243, 44, 94);
-    border-radius: 20px;
-    width: 70%;
-    height: 90%;
 }
-#tick{
-    width: 10px;
-    height: 20px;
-}
-.container1{
-    display: flex;
+
+@media  only screen and (min-width: 671px) and (max-width:820px) {
+  .topnavbar{
+    flex-wrap: wrap;
     flex-direction: row;
-    gap: 10%;
-    padding: 30px;
-    
+    /* justify-content: space-between; */
+    /* gap: 10px; */
+}
+#navbar{
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 20px;
+  justify-content: space-between;
+  /* gap: 10%; */
+  font-size: 12px;
+}
+.Landingpage{
+  flex-wrap: wrap;
+  margin-left: 10%;
+  font-size: 15px;
+  color: rgb(23, 23, 60);
+  ;
+}
+#pic{
+  width: 90px;
 }
 .footer{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
+  flex-wrap: wrap;
+  
+  padding: 5%; 
+  gap: 25%;
+   margin-top: 15%;
 }
-#microsoft{
-    width: 40%;
+.placeholder input{
+  width: 68%;
+  height: 105%;
+  position: relative;
+  border-radius: 20px;
 }
-#google{
-    width: 40%;
+.explore{
+  background-color: rgb(195, 89, 125);
+  border-radius: 20px;
+  position: absolute;
+  border: 3px solid palevioletred;
+  color:rgb(214, 197, 197);
+  width: 18%;
+  height: 6%;
+  margin-left: 25%;
 }
-#medium{
-    width: 40%;
+.LandingSubscription{
+  display: flex;
+  padding: 20px;
+  justify-content:space-between;
+  font-size: 15px;
+  gap: 10%;
 }
-#udemy{
-    width: 30%;
+#login{
+  border-radius: 15px;
+  height: 30%;
+  width: 50px;
+  border-color: rgb(226, 36, 99);
+  color: palevioletred;
 }
-#slack{
-    width: 40%;
+#button{
+  border-radius: 15px;
+  width: 50px;
+  height: 35%;
+  border-color: rgb(226, 36, 99);
+  color: white;
+  background-color: palevioletred;
+  margin-right: 10px;
 }
-
-@media screen and (min-width:375px),(max-width:735px){
-    .topnav{
-        display: block;
-        flex-wrap: wrap;
-
-    }
-    .container1{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10%;
-    
-    }
-    .footer{
-        display: flex;
-        flex-wrap: wrap;
-        
-    }
-    #nav{
-        gap:30px;
-        padding: 10px;
-
-    }
 }
-@media screen and (min-width:393px),(max-width:851px){
-    .topnav{
-        display:flex;
-        flex-wrap: wrap;
-}
-
-.container1{
-    display: flex;
+@media  only screen and (min-width: 821px) and (max-width: 1024px) {
+  .topnavbar{
     flex-wrap: wrap;
-    gap: 10%;
-
+    flex-direction: row;
+    /* justify-content: space-between; */
+    /* gap: 10px; */
+}
+#navbar{
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 20px;
+  justify-content: space-between;
+  /* gap: 10%; */
+  font-size: 12px;
+}
+.Landingpage{
+  flex-wrap: wrap;
+  margin-left: 10%;
+  font-size: 15px;
+  color: rgb(23, 23, 60);
+  ;
+}
+#pic{
+  width: 90px;
 }
 .footer{
-    display: flex;
-    flex-wrap: wrap;
-   
+  flex-wrap: wrap;
+  
+  padding: 5%; 
+  gap: 25%;
+   margin-top: 15%;
 }
-#nav{
-    gap:30px;
-    padding: 10px;
+.placeholder input{
+  width: 68%;
+  height: 105%;
+  position: relative;
+  border-radius: 20px;
+}
+.explore{
+  background-color: rgb(195, 89, 125);
+  border-radius: 20px;
+  position: absolute;
+  border: 3px solid palevioletred;
+  color:rgb(214, 197, 197);
+  width: 5%;
+  height: 6%;
+  margin-left: 10%;
+}
+.LandingSubscription{
+  display: flex;
+  padding: 20px;
+  justify-content:space-between;
+  font-size: 15px;
+  gap: 10%;
+}
+#login{
+  border-radius: 15px;
+  height: 30%;
+  width: 50px;
+  border-color: rgb(226, 36, 99);
+  color: palevioletred;
+}
+#button{
+  border-radius: 15px;
+  width: 50px;
+  height: 35%;
+  border-color: rgb(226, 36, 99);
+  color: white;
+  background-color: palevioletred;
+  margin-right: 10px;
+}
+}
 
-}
-}
-@media screen and (min-width:412px),(max-width:915px){
-    .topnav{
-        display:flex;
-        flex-wrap: wrap;
-}
 
-.container1{
-    display: flex;
-    flex-wrap: wrap;
 
-}
-.footer{
-    display: flex;
-    flex-wrap: wrap;
-}
-#nav{
-    gap:30px;
-    padding: 10px;
 
-}  
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
